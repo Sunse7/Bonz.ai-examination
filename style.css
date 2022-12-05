@@ -55,6 +55,16 @@ body {
     flex-direction: column;
 }
 
+/* Home page */
+
+.hero {
+    background-image: url(images/home/02-day.jpg);
+    background-size: cover;
+}
+
+
+
+
 /* About page */
 
 .about-container,
