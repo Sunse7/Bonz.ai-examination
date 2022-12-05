@@ -8,5 +8,45 @@
 
 * {
     box-sizing: border-box;
-    background-color: purple;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: var(--primary-color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header__nav {
+
+}
+
+.header__nav-icon {
+    font-size: 2rem;
+    color: white;
+}
+
+.header__nav-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.header__nav-items {
+    display: none;
+    background-color: var(--primary-color-3);
+}
+
+.header__nav input {
+    visibility: hidden;
+}
+
+.header__nav input:checked ~ .header__nav-items {
+    display: flex;
+    flex-direction: column;
 }
