@@ -1,0 +1,12 @@
+:root {
+    --primary-color-1: #434B47;
+    --primary-color-2: #969683;
+    --primary-color-3: #5E7461;
+    --primary-color-4: #F0F0EC;
+    --primary-color-5: #284734;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: purple;
+}
