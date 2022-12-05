@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
+
 :root {
     --primary-color-1: #434B47;
     --primary-color-2: #969683;
     --primary-color-3: #5E7461;
     --primary-color-4: #F0F0EC;
     --primary-color-5: #284734;
+    --primary-font: 'Dosis', sans-serif;
 }
 
 * {
@@ -34,6 +37,7 @@ body {
 .header__nav-items a {
     text-decoration: none;
     color: white;
+    font-family: var(--primary-font);
     font-size: 2rem;
 }
 
