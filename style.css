@@ -7,6 +7,7 @@
     --primary-color-4: #F0F0EC;
     --primary-color-5: #284734;
     --primary-font: 'Dosis', sans-serif;
+    --button-red: #FA5757;
 }
 
 * {
@@ -50,7 +51,7 @@ body {
     visibility: hidden;
 }
 
-.header__nav input:checked ~ .header__nav-items {
+input:checked ~ .header__nav-items {
     display: flex;
     flex-direction: column;
 }
@@ -60,9 +61,91 @@ body {
 .hero {
     background-image: url(images/home/02-day.jpg);
     background-size: cover;
+    width: 100vw;
+    height: 19rem;
 }
 
+.home-page-wrapper {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0.6rem 1.25rem;
+}
 
+.date-room-picker--search {
+    background-color: var(--primary-color-3);
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.25rem;
+}
+
+.date-room-picker--search input,
+.date-room-picker--search select,
+.date-room-picker--search option {
+    font-family: var(--primary-font);
+    border-radius: 3px;
+    border: none;
+    margin: 0.3rem 0 1.25rem 0;
+    height: 2.25rem;
+}
+
+.button--search {
+    background-color: var(--primary-color-5);
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    padding: 0.2rem;
+}
+
+.cottage__info {
+    text-align: center;
+    font-family: var(--primary-font);
+}
+
+.cottage__info h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cottage__info p {
+    font-size: 1rem;
+}
+
+.cottage-card {
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+}
+
+.cottage-card img {
+    max-height: 19rem;
+    width: 100%;
+}
+
+.cottage-card h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.button--red {
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: var(--button-red);
+    border: 1.5px solid var(--button-red);
+    border-radius: 3px;
+    padding: 1.25rem;
+}
+
+/* date-room-picker--booking */
 
 
 /* About page */
