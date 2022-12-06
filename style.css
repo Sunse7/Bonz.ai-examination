@@ -224,7 +224,7 @@ input:checked ~ .header__nav-items {
 /* date-room-picker--booking */
 
 
-/* About page */
+/* About page --- Don't forget to add some margins */
 
 .about-container,
 .facilities-container {
