@@ -221,6 +221,12 @@ input:checked ~ .header__nav-items {
     padding: 1rem;
 }
 
+.newsletter-signup__social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 /* date-room-picker--booking */
 
 
