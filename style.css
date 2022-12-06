@@ -65,12 +65,12 @@ input:checked ~ .header__nav-items {
     height: 19rem;
 }
 
-.home-page-wrapper {
+/* .home-page-wrapper {
     background-color: #fff;
     display: grid;
     grid-template-columns: 100%;
     margin: 0.6rem 1.25rem;
-}
+} */
 
 .date-room-picker--search {
     background-color: var(--primary-color-3);
@@ -81,6 +81,7 @@ input:checked ~ .header__nav-items {
     display: flex;
     flex-direction: column;
     padding: 1.5rem 1.25rem;
+    margin: 0.6rem 1.25rem;
 }
 
 .date-room-picker--search input,
@@ -102,6 +103,10 @@ input:checked ~ .header__nav-items {
     border: none;
     border-radius: 3px;
     padding: 0.2rem;
+}
+
+.cottage {
+    margin: 0 1.25rem;
 }
 
 .cottage__info {
@@ -143,6 +148,77 @@ input:checked ~ .header__nav-items {
     border: 1.5px solid var(--button-red);
     border-radius: 3px;
     padding: 1.25rem;
+}
+
+.experiences__container {
+    background-color: var(--primary-color-4);
+    font-family: var(--primary-font);
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+}
+
+.experiences__divide-line {
+    height: 2px;
+    background: rgba(67, 75, 71, 0.5);
+    margin: 1rem 3rem 2rem 3rem;
+}
+
+.experiences__container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.experiences__container h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.experiences__container p {
+    font-size: 1rem;
+}
+
+.newsletter-signup {
+    background-color: var(--primary-color-3);
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+}
+
+.newsletter-signup h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.newsletter-signup h4:last-child {
+    font-weight: 600;
+}
+
+.newsletter-signup p {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter-signup input {
+    height: 3.8rem;
+    border: none;
+    border-radius: 3px;
+    padding: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.button--subscribe {
+    background-color: var(--primary-color-5);
+    color: #fff;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    padding: 1rem;
 }
 
 /* date-room-picker--booking */
