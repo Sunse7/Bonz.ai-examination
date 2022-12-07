@@ -285,7 +285,7 @@ input:checked ~ .header__nav-items {
 /* date-room-picker--booking */
 
 
-/* About page --- Don't forget to add some margins */
+/* About page */
 
 .about-container,
 .facilities-container {
@@ -303,6 +303,7 @@ input:checked ~ .header__nav-items {
 .about-container p,
 .facilities-container p {
     font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .facilities-container h4 {
