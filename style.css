@@ -140,6 +140,26 @@ input:checked ~ .header__nav-items {
     text-align: center;
 }
 
+.cottage-card__icons--first-group {
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 2rem;
+}
+
+.cottage-card__icons--second-group {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.cottage-card__icons--third-group {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.25rem;
+}
+
 .button--red {
     font-family: var(--primary-font);
     font-size: 1.2rem;
@@ -148,6 +168,7 @@ input:checked ~ .header__nav-items {
     border: 1.5px solid var(--button-red);
     border-radius: 3px;
     padding: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 .experiences__container {
@@ -190,10 +211,6 @@ input:checked ~ .header__nav-items {
     color: #fff;
     font-weight: 400;
     text-align: center;
-}
-
-.newsletter-signup h4:last-child {
-    font-weight: 600;
 }
 
 .newsletter-signup p {
