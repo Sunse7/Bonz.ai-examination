@@ -245,6 +245,43 @@ input:checked ~ .header__nav-items {
     justify-content: space-evenly;
 }
 
+.footer {
+    background-color: var(--primary-color-1);
+    color: #fff;
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.footer img {
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer a:last-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+
+
 /* date-room-picker--booking */
 
 
