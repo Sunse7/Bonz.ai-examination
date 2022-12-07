@@ -6,6 +6,7 @@
     --primary-color-3: #5E7461;
     --primary-color-4: #F0F0EC;
     --primary-color-5: #284734;
+    --secondary-light-color: #f5f5f5;
     --primary-font: 'Dosis', sans-serif;
     --button-red: #FA5757;
 }
@@ -141,7 +142,7 @@ input:checked ~ .header__nav-items {
 }
 
 .cottage-card__icons--first-group {
-    background-color: #f5f5f5;
+    background-color: var(--secondary-light-color);
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
