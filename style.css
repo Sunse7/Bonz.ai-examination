@@ -17,6 +17,8 @@
 
 body {
     margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .header {
@@ -25,10 +27,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-}
-
-.header__nav {
-
 }
 
 .header__nav-icon {
@@ -70,13 +68,6 @@ input:checked ~ .header__nav-items {
     width: 100vw;
     height: 19rem;
 }
-
-/* .home-page-wrapper {
-    background-color: #fff;
-    display: grid;
-    grid-template-columns: 100%;
-    margin: 0.6rem 1.25rem;
-} */
 
 .date-room-picker--search {
     background-color: var(--primary-color-3);
@@ -251,6 +242,11 @@ input:checked ~ .header__nav-items {
     padding: 1rem;
 }
 
+.newsletter-signup__container {
+    display: flex;
+    flex-direction: column;
+}
+
 .newsletter-signup__social-icons {
     display: flex;
     flex-direction: row;
@@ -391,8 +387,7 @@ input:checked ~ .header__nav-items {
     .date-room-picker--search {
         flex-direction: row;
         justify-content: space-evenly;
-        max-width: 45rem;
-        
+        max-width: 45rem; 
     }
     .date-room-picker--search input,
     .date-room-picker--search select {
@@ -440,7 +435,9 @@ input:checked ~ .header__nav-items {
         flex-direction: column;
         width: 30rem;
     }
+}
 
+@media screen and (min-width: 1100px) {
     .experiences__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -450,5 +447,17 @@ input:checked ~ .header__nav-items {
     .experiences__container h2,
     .experiences__divide-line {
         grid-column: span 3;
+    }
+
+    .newsletter-signup__container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .newsletter-signup__container input {
+        margin-bottom: 0;
+    }
+    .newsletter-signup__container button {
+        padding: 0 3rem;
     }
 }
