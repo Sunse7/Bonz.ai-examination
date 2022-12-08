@@ -29,9 +29,18 @@ body {
     padding: 1rem;
 }
 
+.header__nav {
+    position: relative;
+    width: 100%;
+}
+
 .header__nav-icon {
     font-size: 2rem;
     color: white;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: -1rem;
 }
 
 .header__nav-items a,
@@ -52,8 +61,16 @@ body {
 }
 
 input:checked ~ .header__nav-items {
+    position: absolute;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 3rem;
+    right: -1rem;
+    padding-top: 6rem;
+    gap: 2rem;
 }
 
 .header__nav--desktop {
