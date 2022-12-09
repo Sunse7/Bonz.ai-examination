@@ -17,8 +17,8 @@
 
 body {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .header {
@@ -95,7 +95,7 @@ input:checked ~ .header__nav-items {
     display: flex;
     flex-direction: column;
     padding: 1.5rem 1.25rem;
-    margin: 0.6rem 1.25rem;
+    margin: 1.25rem;
 }
 
 .date-room-picker--search section {
@@ -132,6 +132,7 @@ input:checked ~ .header__nav-items {
 .cottage__info {
     text-align: center;
     font-family: var(--primary-font);
+    margin: 4rem 0;
 }
 
 .cottage__info h4 {
@@ -189,7 +190,7 @@ input:checked ~ .header__nav-items {
     border-radius: 3px;
     padding: 1.25rem 4rem;
     display: flex;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 4rem auto;
 }
 
 .experiences__container {
@@ -335,11 +336,6 @@ input:checked ~ .header__nav-items {
 
 /* Booking page */
 
-
-.main {
-    margin: 1.25rem;
-}
-
 .date-room-picker--booking {
     background-color: var(--primary-color-3);
     font-family: var(--primary-font);
@@ -348,7 +344,7 @@ input:checked ~ .header__nav-items {
     grid-template-columns: repeat(2, 1fr);
     gap: 6px;
     padding: 0 1.25rem 1.25rem 1.25rem;
-    margin-bottom: 1.25rem;
+    margin: 1.25rem;
     border-radius: 3px;
 }
 
@@ -417,15 +413,31 @@ input:checked ~ .header__nav-items {
         margin-top: auto;
         margin-bottom: 1.25rem;
     }
+
+    .date-room-picker--booking {
+        max-width: 40rem; 
+    }
 } 
 
 @media screen and (min-width: 765px) {
     .date-room-picker--search {
-        margin: 0.6rem auto;
+        margin: 1.25rem auto;
+    }
+    .date-room-picker--booking {
+        margin: 4rem auto;
     }
 }
 
 @media screen and (min-width: 1000px) {
+
+    .booking-page{
+        background-image: url(images/booking/vincent-guth-uhoILl3HUZM-unsplash.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+    .booking-page::before {
+       
+    }
 
     .hero {
         height: 50rem;
@@ -433,7 +445,7 @@ input:checked ~ .header__nav-items {
 
     .cottage__info {
         max-width: 62rem;
-        margin: 3rem auto;
+        margin: 4rem auto;
     }
     .cottage-card {
         flex-direction: row;
@@ -469,6 +481,7 @@ input:checked ~ .header__nav-items {
 }
 
 @media screen and (min-width: 1100px) {
+    
     .experiences__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -490,5 +503,14 @@ input:checked ~ .header__nav-items {
     }
     .newsletter-signup__container button {
         padding: 0 3rem;
+    }
+
+    .facilities-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    .facilities-container section:first-child {
+        grid-column: span 3;
     }
 }
